@@ -21,14 +21,28 @@ class profile_card extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    height: 178,
+                    height: 128,
                     width: 128,
-                    child: Image(
-                      image: AssetImage('Asset/images/Unknown.png'),
-                      fit: BoxFit.contain,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50), // Rounded corners
                     ),
-                    // decoration:
-                    //     BoxDecoration(borderRadius: BorderRadius.circular(100),),
+                    child: Stack(
+                      children: [
+                        Center(
+                          child: Container(
+                            height: 128,
+                            width: 128,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('Asset/images/My_pic 2.jpeg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(
                     width: 10,
