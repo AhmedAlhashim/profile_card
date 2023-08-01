@@ -39,7 +39,7 @@ class profile_card extends StatelessWidget {
                     children: [
                       Text("Eng. Ahmed Alhahsim",
                           style:
-                              TextStyle(fontSize: 20, color: Colors.blueGrey)),
+                          TextStyle(fontSize: 20, color: Colors.blueGrey)),
                       Text("Software Engineer",
                           style: TextStyle(fontSize: 12, color: Colors.grey)),
                       Row(
@@ -147,7 +147,7 @@ class CustomIcon extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.blue[50],
           borderRadius:
-              BorderRadius.circular(16)), // Apply decoration to the Container
+          BorderRadius.circular(16)), // Apply decoration to the Container
       child: Icon(
         icon,
         color: Colors.blue,
